@@ -6,9 +6,9 @@
 """
 
 
-from typing import Sequence, Tuple
+from typing import Sequence, Tuple, Iterable, List
 
 
-def element_length(lst: int) -> int:
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """_summary_"""
     return [(i, len(i)) for i in lst]
