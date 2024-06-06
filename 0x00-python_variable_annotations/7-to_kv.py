@@ -6,10 +6,11 @@
 """
 
 
-import typing
+from typing import Union, Tuple
+from math import pow
 
 
-def to_kv(k: str, v: typing.Union(int, float)) -> tuple:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """_summary_
 
     Args:
@@ -19,4 +20,4 @@ def to_kv(k: str, v: typing.Union(int, float)) -> tuple:
     Returns:
         tuple: _description_
     """
-    return (k, float(v))
+    return (k, pow(v, 2))
