@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 """_summary"""
-
-
 import random
 import asyncio
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: int = 10) -> float:
     """_summary_
 
     Args:
