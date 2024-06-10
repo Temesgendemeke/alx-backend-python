@@ -15,5 +15,6 @@ async def wait_random(max_delay=10):
     Returns:
         _type_: _description_
     """
+    delay = random.uniform(0, max_delay)
     await asyncio.sleep(max_delay)
-    return random.uniform(0, max_delay)
+    return delay
