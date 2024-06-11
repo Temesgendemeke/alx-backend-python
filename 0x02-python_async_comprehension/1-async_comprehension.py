@@ -4,6 +4,6 @@ from typing import Generator, List
 async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_comprehension() -> List[Generator[float]]:
+async def async_comprehension() -> List[Generator[float, None, None]]:
     """async comprehension function"""
     return [i async for i in async_generator()]
