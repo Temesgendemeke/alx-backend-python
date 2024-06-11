@@ -5,7 +5,7 @@ from datetime import datetime
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime():
+async def measure_runtime() -> float:
     """measure_runtime"""
     start_time = datetime.now()
     await asyncio.gather(*[async_comprehension() for _ in range(4)])
